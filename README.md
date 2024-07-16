@@ -45,28 +45,9 @@ By using the same logic as before I could take in an argument for an if or
 while statement enclosed in dollar signs.   
 
 Finally, I made an end function that declared where the end of an if or 
-while statement is.  A quick example of the lang  
+while statement is.
 
-strdef name = "None" 
-print "What's your name?\n" 
-input +name+ 
-if $name == "Mark" || name == "mark"$
-print "Hey it's me!\n" 
-end 
-if $name != "Mark || name != "mark"$
-print "Hello, "
-print +name+
-print "\n"
-end 
-print "please type exit\n" 
-strdef isexit = "null" 
-while $isexit != "exit"$ 
-input +isexit+ 
-end 
-  
-
-
-This was about 5 hours of work and I'm happy with the result. I added 
+This was about 7 hours of work and I'm happy with the result. I added 
 one last function called debug, which allows the compiler to give you the 
 code from the intermediary language, in this case, it's C++, as well as the 
 executable file. I'll publish it here when I work out some of the smaller 
@@ -81,3 +62,84 @@ If you do wish to modify this and use it. You need to have g++ installed to comp
 I might continue work sometime in the future, but for now there are no guarntees as I want to make more intresting projects, and I'm sure there's a better way to write this.
 
 Thanks for supporting my projects by reading this.
+
+
+
+
+Syntax
+print:
+
+Print "text"
+Print +varName+
+
+
+strdef:
+
+strdef stringName = "stringValue"
+
+
+str:
+
+str stringName = "stringValue"
+
+
+intdef:
+
+intdef intName = intValue
+
+
+int:
+
+int intName = intValue
+
+
+input:
+
+input +stringName+
+
+
+if:
+
+if $condition$ 
+examples: 1==1  string == "stringvalue"  int > 5
+must always be ended with a end
+example:
+if$condition$
+print "condition is met"
+end
+
+
+while:
+
+while $condition$ 
+examples: 1==1  string == "stringvalue"  int > 5
+must always be ended with a end
+example:
+while $condition$
+print "condition is met"
+end
+
+
+
+
+inputint:
+BROKEN
+inputint +intName+
+
+
+math:
+math intName = intName + 1
+
+
+debug:
+doesn't dispose of output.cpp for debugging purposes.
+
+
+clear:
+clears the console
+
+
+exit:
+exits out of a while loop early
+
+
