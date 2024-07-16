@@ -67,6 +67,8 @@ Thanks for supporting my projects by reading this.
 
 
 Syntax
+
+
 print:
 
 Print "text"
