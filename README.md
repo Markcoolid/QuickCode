@@ -102,22 +102,22 @@ input +stringName+
 
 if:
 
-if $condition$ 
+if \$condition\$ 
 examples: 1==1  string == "stringvalue"  int > 5
 must always be ended with a end
 example:
-if$condition$
+if \$condition\$
 print "condition is met"
 end
 
 
 while:
 
-while $condition$ 
+while \$condition\$ 
 examples: 1==1  string == "stringvalue"  int > 5
 must always be ended with a end
 example:
-while $condition$
+while \$condition\$
 print "condition is met"
 end
 
@@ -143,5 +143,6 @@ clears the console
 
 exit:
 exits out of a while loop early
+
 
 
